@@ -1,6 +1,0 @@
-In /root/stats-entry/app/, continue the Indonesia statistics site:
-- Create app/js/pages/overview.js: dashboard of key indicators (cards with latest value, delta vs previous year, small sparkline SVG), using data from app/js/data/indicators.js.
-- Create app/js/pages/population.js: population page with a line chart (SVG drawn by code) of population 2015-2024 and growth rate bar chart, plus a year dropdown selector that re-renders the stat panel.
-- Create app/js/charts.js: reusable helpers: lineChart(el, series, opts), barChart(el, data, opts), sparkline(values) — all pure SVG built with document.createElementNS, axes, labels, tooltips (title elements).
-- Every figure displayed must show its source name and year (e.g. "BPS, 2023" or "World Bank, 2022").
-No http/https text in any file. Keep files small and focused.

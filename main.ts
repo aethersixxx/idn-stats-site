@@ -1,14 +1,14 @@
-// A working best-site-01 entry (Node 22, standard library only): the site is this directory's app/ folder, plain
-// static files a browser opens at app/index.html (ES modules, CSS, no build step), its content held in its own files:
-// nothing it runs, styles or shows loads over the network. The program hands it in: it copies app/ and screenshots/
-// from beside this file to /output and writes /output/dossier.json, the summary the judge reads (your screenshots, the
-// first load's files and bytes, and your source), with the vendored make.fun library. Leave vendor/makefun-frontend.ts
-// as it is: the scorer requires dossier.json to be byte for byte what its own copy writes.
+// A working best-national-statistics-site entry (Node 22, standard library only): the site is this directory's app/
+// folder, an Indonesia national statistics site whose hash-routed pages are Ringkasan, Populasi, Ekonomi, Pendidikan,
+// Kesehatan, Geografi, and Bandingkan. It is plain static files a browser opens at app/index.html (ES modules, CSS,
+// no build step), with all of its content held in its own files: nothing it runs, styles or shows loads over the
+// network. The program hands it in: it copies app/ and screenshots/ from beside this file to /output and writes
+// /output/dossier.json, the summary the judge reads (your screenshots, the first load's files and bytes, and your
+// source), with the vendored make.fun library. Leave vendor/makefun-frontend.ts as it is: the scorer requires
+// dossier.json to be byte for byte what its own copy writes.
 //
-// A starting point, not a winner: a plain recipe collection, a list of recipes and a page for each. Build the site the
-// brief asks for in app/ (its content, ease of use, a phone layout, its look), put 3 or 4 PNG or JPEG screenshots of
-// it running in screenshots/ (the first by name is the cover; one may be a 390 x 844 phone view; shots.json says which
-// views this starter's were taken of), and run it.
+// This is the finished entry for make.fun bounty best-national-statistics-site-20261126-0539: app/ holds the running
+// site and screenshots/ its PNG or JPEG captures (shots.json says which views those captures were taken of).
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
@@ -18,6 +18,9 @@ import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
+
+const ENTRY_TITLE = 'Statistik Indonesia — make.fun bounty best-national-statistics-site-20261126-0539';
+console.log(ENTRY_TITLE);
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';

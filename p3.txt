@@ -1,6 +1,0 @@
-In /root/stats-entry/app/, continue the Indonesia statistics site:
-- app/js/pages/economy.js: GDP line chart, inflation bar chart, trade (exports vs imports) grouped bar chart, plus a toggle (buttons) switching between "Nominal (US$)" and "Growth (%)" views for GDP.
-- app/js/pages/education.js and app/js/pages/health.js: each with a chart, a small table of recent years, and a select dropdown choosing which indicator/series to chart.
-- app/js/pages/geography.js: key facts (area, capital, highest point, climate zones) and charts for forest area % and CO2 emissions, with year range filter (two dropdowns from-to).
-- app/js/pages/compare.js: compare-years feature: two year dropdowns; shows a table of all indicators with values for both years and absolute + percent change, color-coded up/down.
-No http/https text anywhere. Source+year attribution on all figures.

@@ -1,6 +1,0 @@
-Final QA pass on /root/stats-entry/app/ (Indonesia statistics site):
-- Open-check logic: simulate route loading for #/, #/population, #/economy, #/education, #/health, #/geography, #/compare by reasoning through main.js router and each page module; fix any undefined function, missing export, or wrong element id.
-- Ensure every chart has axis labels and the data arrays actually contain 2015-2024 values (no undefined years).
-- Ensure compare page handles equal years and shows percent change correctly.
-- Double-check no network usage: no fetch, no external fonts, no external images. All fonts system stack.
-- Re-run `cd /root/stats-entry && rm -rf out && mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts` to confirm clean exit and out/dossier.json exists. Report file count and total bytes of app/.

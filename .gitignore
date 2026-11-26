@@ -1,4 +1,5 @@
-app/node_modules/
 out/
-codex-build1.log
-BUILD_BRIEF.md
+entry-bundle.tar.gz
+*.log
+p[0-9].txt
+codex-*.log
