@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistik Indonesia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="#/" class="site-brand" aria-label="Statistik Indonesia">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="currentColor"/>
+          <path d="M8 12h16M8 16h16M8 20h10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">Statistik Indonesia</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu navigasi">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="#/" class="nav-link" data-page="overview">Ringkasan</a></li>
+          <li><a href="#/population" class="nav-link" data-page="population">Populasi</a></li>
+          <li><a href="#/economy" class="nav-link" data-page="economy">Ekonomi</a></li>
+          <li><a href="#/education" class="nav-link" data-page="education">Pendidikan</a></li>
+          <li><a href="#/health" class="nav-link" data-page="health">Kesehatan</a></li>
+          <li><a href="#/geography" class="nav-link" data-page="geography">Geografi</a></li>
+          <li><a href="#/compare" class="nav-link" data-page="compare">Bandingkan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="main-content" role="main"></main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Data sources: BPS &amp; World Bank.</p>
+      <p class="footer-note">Portal data statistik Indonesia.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

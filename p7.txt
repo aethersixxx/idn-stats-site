@@ -1,0 +1,6 @@
+Final QA and fix pass on the Indonesia statistics site in /root/stats-entry/app/:
+1. Read every file in app/ (index.html, css/style.css, js/main.js, js/ui.js, js/data/indicators.js, js/pages/*.js) and fix: broken imports, functions used but not exported, element ids/classes referenced in JS but missing in HTML/CSS, charts that would render empty (indicators values must span 2015-2024 with real numbers, no undefined).
+2. Ensure at least two working interactive controls beyond nav (year dropdowns, toggles, range filters) and that the #/compare page's two-year comparison computes absolute and percent change correctly.
+3. Search all app/ files for the string 'http' and remove every occurrence (external references are forbidden).
+4. Ensure everything renders at 390px width (nav toggle works, charts scale).
+5. Verify: cd /root/stats-entry && rm -rf out && mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts; confirm it exits 0 and out/dossier.json exists. Report app file count and total bytes.

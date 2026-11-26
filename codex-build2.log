@@ -1,0 +1,22 @@
+Reading additional input from stdin...
+OpenAI Codex v0.169.0
+--------
+workdir: /root/stats-entry
+model: deepseek/deepseek-v4-pro
+provider: vikey
+approval: never
+sandbox: danger-full-access
+reasoning effort: none
+reasoning summaries: none
+session id: 01a21806-81c8-7092-925c-e99a20e2e98c
+--------
+user
+
+warning: Model metadata for `deepseek/deepseek-v4-pro` not found. Defaulting to fallback metadata; this can degrade performance and cause issues.
+The user hasn't actually asked a question yet. The environment context is provided, but there's no query. I should wait for their request. Maybe I can greet and ask what they need. Do not create goals unless explicitly requested. No need tools.
+The user hasn't actually asked a question yet. The environment context is provided, but there's no query. I should wait for their request. Maybe I can greet and ask what they need. Do not create goals unless explicitly requested. No need tools.
+codex
+Hey! I’m ready to help with `/root/stats-entry`. What would you like me to do?
+tokens used
+6,346
+Hey! I’m ready to help with `/root/stats-entry`. What would you like me to do?

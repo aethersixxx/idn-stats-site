@@ -1,0 +1,7 @@
+Review and polish the Indonesia statistics site in /root/stats-entry/app/:
+- Verify every nav link route has a working page module; fix broken imports or route names.
+- Check mobile responsiveness: at 390px the nav must wrap or collapse, charts must shrink (svg width 100%, viewBox). Fix CSS as needed.
+- Grep all app/ files for 'http' and remove any external references (including in comments).
+- Add a small vanilla JS mobile nav toggle button (hamburger) in index.html/main.js that actually works.
+- Improve visual polish: consistent spacing, hover states on nav/cards, accessible contrast, aria-labels on interactive controls.
+- Finally verify the build: run `cd /root/stats-entry && rm -rf out && mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts` and confirm out/dossier.json is created without error; report the result.
